@@ -43,10 +43,29 @@ git clone [https://github.com/sammyy273/Anti-CD73-Nanobody-Design.git](https://g
 
 cd Anti-CD73-Nanobody-Design
 
-**2. Install dependencies**
-pip install numpy requests
+**OR**
 
-**(Install PyRosetta using the link above)**
+**2. Install it:**
+
+_Download the correct file (For 64-bit; **Run Windows Power shell as adminstrator**):_
+
+wget https://graylab.jhu.edu/download/PyRosetta4/archive/release/PyRosetta4.MinSizeRel.python310.ubuntu.wheel/pyrosetta-2025.45+release.d79cb06334-cp310-cp310-linux_x86_64.whl
+
+**_Install it:_**
+
+pip install pyrosetta-2025.45+release.d79cb06334-cp310-cp310-linux_x86_64.whl
+
+**_Test it using:_**
+
+python -c "import pyrosetta; pyrosetta.init()"
+
+import pyrosetta
+
+from pyrosetta.toolbox import pose_from_rcsb
+
+**_Initialize PyRosetta_**
+
+pyrosetta.init()
 
 # Run the Pipeline
 **_​The scripts are numbered sequentially for reproducibility:_**
